@@ -1,0 +1,380 @@
+.main-layout {
+  background-color: #0f0f0f !important;
+  font-family: 'Poppins';
+  min-height: 100vh;
+  color: white;
+  padding: 60px;
+}
+
+.sub-main-layout {
+  display: flex;
+  min-height: calc(100vh - 120px); 
+  align-items: flex-start;
+}
+
+
+.left-box-L {
+  width: 25%;
+  background-color: transparent;
+  position: sticky;
+  top: 20px;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 30px;
+  border: 1px solid var(--jet);
+  margin: 20px;
+  z-index: 2;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.right-box-R {
+  width: 75%;
+  background-color: transparent;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 30px;
+  border: 1px solid var(--jet);
+  margin: 20px;
+  z-index: 2;
+  scroll-behavior: smooth;
+}
+
+.left-box-content, .right-box-R > *:not(.background-wrapper) {
+  position: relative;
+  z-index: 2;
+}
+
+/* Profile Section Styles */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #181818;
+  /* box-shadow: 0 0 0 0.2px white; */
+  margin: 30px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.profile-info p {
+  margin: 5px 0 0;
+  color: #ccc;
+  background: #181818;
+  border-radius: 5px;
+}
+
+
+/* Contact Details */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 100%;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+  gap: 12px; /* Space between icon and text */
+}
+
+.social-icon a{
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover{
+  transform: translateY(-2px);
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #181818;
+  background-image: linear-gradient(to right bottom, #161616, #121212, #0d0d0d, #070707, #000000);
+  border-top: 1px solid rgba(255, 255, 255, 0.164); 
+  border-left: 1px solid rgba(255, 255, 255, 0.164);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);      
+  cursor: pointer;
+  transition: all 0.3s ease;      
+}
+
+.contact-icon {
+  font-size: 18px;
+  color: #FFDB70;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 48px; /* Match icon box height */
+}
+
+.contact-title {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.2;
+}
+
+.contact-link {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  line-height: 1.4;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  width: 100%;
+}
+
+.social-icon {
+  color: #FFDB70;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease; /* Added transform transition */
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons .social-icon:hover {
+  transform: translateY(-1px); /* Pull up the icon on hover */
+}
+
+.mobile-expand-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+.contact-link{
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 1090px) {
+  .main-layout {
+    padding: 20px;
+  }
+
+  .sub-main-layout {
+    flex-direction: column;
+  }
+
+  .left-box-L, .right-box-R {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .left-box-L {
+    min-height: auto;
+    height: auto;
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 20px; /* Add some padding at bottom */
+  }
+
+  .left-box-L.expanded {
+    min-height: auto; /* Let content determine height */
+  }
+
+  hr {
+    display: none; /* Hide the hr in mobile view */
+  }
+
+  .profile-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-right: 40px;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .profile-info {
+    text-align: left;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .profile-info h1 {
+    margin-top: 30px;
+  }
+
+  .profile-info p {
+    margin-top: 20px;
+  }
+
+  .mobile-expand-btn {
+    display: block;
+    color: #FFDB70;
+  }
+
+  .contact-details {
+    display: none; /* Hide by default on mobile */
+    padding: 0 10px;
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+  }
+
+  .left-box-L.expanded .contact-details {
+    display: flex; /* Show when expanded */
+  }
+  .sub-main-layout {
+    align-items: flex-start;
+  }
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  gap: 2rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  margin-right: 15px;
+}
+
+.right-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+  background: #181818;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #181818;
+  background-image: linear-gradient(to right bottom, #161616, #0f0f0f, #0e0e0e, #0a0a0a, #070707);
+  border-top: 1px solid rgba(255, 255, 255, 0.164); 
+  border-left: 1px solid rgba(255, 255, 255, 0.164);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);      
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.right-nav a.active {
+  /* background-color: #181818; */
+  color: #FFDB70;
+}
+
+/* .right-nav a:hover {
+  background-color: #f0f0f0;
+} */
+
+/* Responsive: Stack nav links on smaller screens */
+@media (max-width: 768px) {
+  .right-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 0px;
+    font-size: 16px !important;
+  }
+  .right-box-R {
+    padding: 0rem;
+  }
+}
+
+@media (max-width: 668px) {
+  .right-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 0px;
+    font-size: 13px !important;
+  }
+  .right-box-R {
+    padding: 0rem;
+  }
+}
+@media (max-width: 568px) {
+  .right-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 0px;
+    font-size: 11px !important;
+  }
+  .right-box-R {
+    padding: 0rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .right-nav {
+    font-size: 10px !important;
+    gap: 10px;
+  }
+}
+:root {
+  --jet: #333333; /* example color */
+}

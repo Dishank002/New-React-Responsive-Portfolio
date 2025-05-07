@@ -1,0 +1,45 @@
+.Page{
+    margin: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.AboutPage p{
+    text-align: justify;
+}
+
+.Headline {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  
+  .Headline::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 15%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 4px; /* thickness of the underline */
+    background-color: #FFDB70; /* change to your preferred color */
+    border-radius: 2px;
+  }
+  
+
+@media (max-width: 768px) {
+    .Page {
+      margin: 20px;
+    }
+  
+    .Headline {
+      margin: -40px 0px 30px 0px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .AboutPage p {
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+  }
+  
