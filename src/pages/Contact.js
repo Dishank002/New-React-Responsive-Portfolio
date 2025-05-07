@@ -47,11 +47,7 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Message sent!");
-    setFormData({ name: "", email: "", message: "" });
-  };
+  
 
   return (
     <div className="Page">
