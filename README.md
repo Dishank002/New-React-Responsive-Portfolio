@@ -22,7 +22,7 @@ This is a responsive and interactive personal portfolio website built using **Re
 - Netlify (for deployment)
 
 ## Demo
-## Laptop View
+### Laptop View
 
 https://github.com/user-attachments/assets/75caf643-69d7-48f6-87dc-70727787e730
 
