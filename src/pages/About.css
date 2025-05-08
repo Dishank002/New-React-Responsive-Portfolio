@@ -107,7 +107,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
+    
     .d-flex.flex-row.align-items-center ,.card{
         width: 23rem !important;
     }
@@ -117,6 +119,32 @@
       height: 11rem;  /* Fixed height for all cards */
     }
   }
+
+  @media screen and (max-width: 467px){
+    .d-flex.flex-row.align-items-center {
+      width: 19rem !important;  /* Fixed height for all cards */
+      height: 8rem !important;
+    }
+    .Page{
+      margin: 0px !important;
+    }
+    .Headline{
+      font-size: 20px !important;
+    }
+    .about-paragrapth{
+      font-size: 14px !important;
+    }
+    .What-i-learn-title{
+      font-size: 19px !important;
+    }
+    .card-title h5{
+      font-size: 17px;
+    }
+    .Card-Text{
+      font-size: 14px;
+    }
+  }
+
 
   .card{
     background: #181818;

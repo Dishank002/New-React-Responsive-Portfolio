@@ -34,11 +34,11 @@ const About = () => {
         work—but stand out. Let’s build something amazing together! 🚀
       </p>
       <br></br>
-      <h4>What I'm learning</h4>
+      <h4 className="What-i-learn-title">What I'm learning</h4>
       <div className="What-i-learn">
         <div className="box12">      
         <Card
-          className="d-flex flex-row align-items-center" style={{ width: "30rem", backgroundColor: "#1c1c1c" }}>
+          className="d-flex flex-row align-items-center card-main" style={{ width: "30rem", backgroundColor: "#1c1c1c" }}>
           <Card.Img className="card-image" src={Python} style={{width: "25%", height: "auto", objectFit: "contain", padding: "10px",}}/>
           <Card.Body className="card-body" style={{ color: "white" }}>
             <Card.Title>Python</Card.Title>
@@ -49,7 +49,7 @@ const About = () => {
           </Card.Body>
         </Card>
         <Card
-          className="d-flex flex-row align-items-center" style={{ width: "30rem", backgroundColor: "#1c1c1c" }}>
+          className="d-flex flex-row align-items-center card-main" style={{ width: "30rem", backgroundColor: "#1c1c1c" }}>
           <Card.Img className="card-image" src={ML} style={{width: "25%", height: "auto", objectFit: "contain", padding: "10px",}}/>
           <Card.Body className="card-body" style={{ color: "white" }}>
             <Card.Title>Machine Learning</Card.Title>
@@ -62,7 +62,7 @@ const About = () => {
         </div>
         <div className="box34">
         <Card
-          className="d-flex flex-row align-items-center" style={{ width: "30rem", backgroundColor: "#1c1c1c" }}>
+          className="d-flex flex-row align-items-center card-main" style={{ width: "30rem", backgroundColor: "#1c1c1c" }}>
           <Card.Img className="card-image" src={DS} style={{width: "25%", height: "auto", objectFit: "contain", padding: "10px",}}/>
           <Card.Body className="card-body" style={{ color: "white" }}>
             <Card.Title>Data Structures And Algorithms</Card.Title>
@@ -72,7 +72,7 @@ const About = () => {
           </Card.Body>
         </Card>
         <Card
-          className="d-flex flex-row align-items-center" style={{ width: "30rem", backgroundColor: "#1c1c1c" }}>
+          className="d-flex flex-row align-items-center card-main" style={{ width: "30rem", backgroundColor: "#1c1c1c" }}>
           <Card.Img className="card-image" src={AI} style={{width: "25%", height: "auto", objectFit: "contain", padding: "10px",}}/>
           <Card.Body className="card-body" style={{ color: "white" }}>
             <Card.Title>Artificial Intelligence</Card.Title>

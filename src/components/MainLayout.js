@@ -124,7 +124,7 @@ const MainLayout = () => {
           />
           <nav className="right-nav">
             <NavLink to="/" end>About</NavLink>
-            <NavLink to="/experience">Experience</NavLink>
+            <NavLink to="/experience">Resume</NavLink>
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/skills">Skills</NavLink>
             <NavLink to="/contact">Contact</NavLink>

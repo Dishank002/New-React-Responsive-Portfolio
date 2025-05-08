@@ -184,14 +184,19 @@
 
 .mobile-expand-btn {
   display: none;
-  background: none;
+  background: #181818;
+  border-radius: 12px;
   border: none;
+  background-image: linear-gradient(to right bottom, #161616, #121212, #0d0d0d, #070707, #000000);
+  border-top: 1px solid rgba(255, 255, 255, 0.164); 
+  border-left: 1px solid rgba(255, 255, 255, 0.164);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);   
   color: white;
-  font-size: 1.2rem;
+  font-size: 25px;
   cursor: pointer;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 0px;
+  top: 0px;
 }
 
 body {
@@ -336,6 +341,7 @@ body {
     gap: 1rem;
     margin-right: 0px;
     font-size: 16px !important;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
   }
   .right-box-R {
     padding: 0rem;
@@ -350,11 +356,13 @@ body {
     gap: 1rem;
     margin-right: 0px;
     font-size: 13px !important;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
   }
   .right-box-R {
     padding: 0rem;
   }
 }
+
 @media (max-width: 568px) {
   .right-nav {
     flex-direction: row;
@@ -362,7 +370,8 @@ body {
     justify-content: center;
     gap: 1rem;
     margin-right: 0px;
-    font-size: 11px !important;
+    font-size: 12px !important;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
   }
   .right-box-R {
     padding: 0rem;
@@ -371,10 +380,37 @@ body {
 
 @media (max-width: 520px) {
   .right-nav {
-    font-size: 10px !important;
+    font-size: 12px !important;
     gap: 10px;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
+
+@media(max-width: 460px){
+  .profile-info h1{
+    font-size: 20px;
+    width: 120%;
+  }
+  .profile-info p{
+    font-size: 14px;
+    width: 120%;
+  }
+  .profile-pic{
+    margin-left: 10px !important;
+    height: 85px;
+    width: 85px;
+  }
+  .contact-title{
+    font-size: 12px !important;
+  }
+  .contact-link{
+    font-size: 14px;
+  }
+
+}
+
 :root {
   --jet: #333333; /* example color */
 }

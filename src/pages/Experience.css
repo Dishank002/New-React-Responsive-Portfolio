@@ -2,61 +2,6 @@
     padding: 20px;
   }
 
-/* .timeline{
-  position: relative;
-  max-width: 1200px;
-  margin: 100px auto;
-}
-.container{
-  padding: 10px 50px;
-  position: relative;
-  width: 50%;
-}
-
-.text-box{
-  padding: 20px 30px;
-  position: relative;
-  border-radius: 6px;
-}
-.Education-title{
-  padding: 0px 30px;
-  position: relative;
-  border-radius: 6px;
-}
-
-.Dot{
-  position: absolute;
-  width: 40px;
-  left: -22px;
-  top: 32px;
-  z-index: 10;
-  font-size: 1rem;
-  color: gray;
-  border-radius: 50px;
-}
-
-.Book{
-  position: absolute;
-  width: 40px;
-  background: black;
-  font-size: 3rem;
-  color: #ffdb70;
-  left: -22px;
-  z-index: 10;
-}
-
-.timeline::after{
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  background: #ffdb70;
-  top: 0;
-  left: 50;
-  margin-left: -3px;
-  z-index: -1;
-} */
-
 .timeline {
   position: relative;
   max-width: 800px;
@@ -165,4 +110,23 @@
   padding: 0px 30px;
   position: relative;
   border-radius: 6px;
+}
+
+@media screen and (max-width: 467px){
+  .Education-title h2{
+    font-size: 20px !important;  /* Fixed height for all cards */
+    padding-top: 8px !important;
+  }
+  .Book{
+    font-size: 40px;
+  }
+  .timeline-content{
+    margin: 10px !important;
+  }
+  .timeline-content h6{
+    font-size: 14px !important;
+  }
+  .timeline-item{
+    width: 110% !important;
+  }
 }
