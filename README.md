@@ -4,7 +4,7 @@ This is a responsive and interactive personal portfolio website built using **Re
 
 ## 🌐 Live Demo
 
-[View Portfolio Live](https://your-live-portfolio-link.netlify.app)
+[View Portfolio Live][(https://your-live-portfolio-link.netlify.app)](https://portfoliobydishank.netlify.app/)
 
 ## 🚀 Features
 
@@ -21,5 +21,6 @@ This is a responsive and interactive personal portfolio website built using **Re
 - React Icons
 - Netlify (for deployment)
 
-## 📂 Folder Structure
+## Demo
 
+https://github.com/user-attachments/assets/75caf643-69d7-48f6-87dc-70727787e730
